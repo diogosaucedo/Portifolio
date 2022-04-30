@@ -1,10 +1,30 @@
 import { initializeApollo } from '../../lib/apolloClient';
 import { GET_INFO_PROFILE_BY_LOGIN } from '../../lib/queries/getInfoProfileByLogin';
-
+import Layout from '../components/Layout';
+import NavigationBar from '../components/NavigationBar';
+import PersonalPresentation from '../components/PersonalPresentation';
+import About from '../components/About';
+import Contacts from '../components/Contacts';
+import Projects from '../components/Projects';
+import Services from '../components/Services';
+import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 
 function Index({ index }) {
-    return <h1>Hello, my name is {index.data.user.name} :)</h1>;
+    return (
+        <>
+            <Layout>
+                <NavigationBar></NavigationBar>
+                <PersonalPresentation></PersonalPresentation>
+                <About></About>
+                <Contacts></Contacts>
+                <Projects></Projects>
+                <Services></Services>
+                <Skills></Skills>
+            </Layout>
+            <Footer></Footer>
+        </>)
 }
 
 export default Index;
