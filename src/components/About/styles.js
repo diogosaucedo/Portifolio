@@ -14,7 +14,6 @@ export const Title = styled.h2`
     color: ${theme.colors.white};
     margin: 0 0 3rem 0;
 `
-
 export const Description = styled.p`
     max-width: 74.5rem;
     text-align: center;

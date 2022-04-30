@@ -1,15 +1,18 @@
 import { Container, Menu, MenuItems, MenuItem, Portifolio } from './styles'
+import { Link } from '../Link/styles'
 
 export default function NavigationBar() {
     return (
         <Container>
-            <Portifolio>Portifolio</Portifolio>
+            <Link href='/'>
+                <Portifolio>Portifólio</Portifolio>
+            </Link>
             <Menu>
                 <MenuItems>
-                    <MenuItem>Sobre Mim</MenuItem>
-                    <MenuItem>Projetos</MenuItem>
-                    <MenuItem>Serviços</MenuItem>
-                    <MenuItem>Minhas Skills</MenuItem>
+                    <Link href='#sobre-mim'><MenuItem>Sobre Mim</MenuItem></Link>
+                    <Link href='#projetos'><MenuItem>Projetos</MenuItem></Link>
+                    <Link href='#servicos'><MenuItem>Serviços</MenuItem></Link>
+                    <Link href='#minhas-skills'><MenuItem>Minhas Skills</MenuItem></Link>
                 </MenuItems>
             </Menu>
         </Container>

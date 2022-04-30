@@ -3,7 +3,7 @@ import { Container, Title, Items, Item, ItemName, ItemImg } from './styles'
 export default function Services() {
     return (
         <Container>
-            <Title>Serviços</Title>
+            <Title id='servicos'>Serviços</Title>
             <Items>
                 <Item>
                     <ItemImg src="./images/code.svg" alt="Desenvolvimento de sites" />

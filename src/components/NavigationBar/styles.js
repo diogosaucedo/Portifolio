@@ -29,13 +29,3 @@ export const MenuItems = styled.ul`
 export const MenuItem = styled.li`
     padding: 2rem;
 `
-
-export const LinkItem = styled.a`
-    text-decoration: none;
-    :visited{
-        color: ${theme.colors.white};
-    }
-    :hover{
-        cursor: pointer;
-    }
-`

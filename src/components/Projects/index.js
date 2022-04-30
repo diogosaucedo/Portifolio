@@ -4,7 +4,7 @@ import { Container, Title, LastProjects, Project, ProjectName, ProjectTechnologi
 export default function Projects() {
     return (
         <Container>
-            <Title>Projetos</Title>
+            <Title id='projetos'>Projetos</Title>
             <LastProjects>
                 <Project>
                     <Cover></Cover>

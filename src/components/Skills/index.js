@@ -4,7 +4,7 @@ import { Container, Title, Items, Item, ItemImg } from './styles'
 export default function Skills() {
     return (
         <Container>
-            <Title>Skills</Title>
+            <Title id='minhas-skills'>Skills</Title>
             <Items>
                 <Item>
                     <ItemImg src='./images/html.svg' alt="html" />
