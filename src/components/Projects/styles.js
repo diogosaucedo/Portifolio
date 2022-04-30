@@ -35,6 +35,8 @@ export const ProjectName = styled.h3`
     font-weight: 500;
     color: ${theme.colors.white};
     margin: 2.3rem 0 0 0;
+    word-wrap: break-word;
+    max-width: 30rem;
 `
 
 export const ProjectTechnologies = styled.p`

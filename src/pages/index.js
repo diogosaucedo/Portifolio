@@ -16,10 +16,10 @@ function Index({ index }) {
         <>
             <Layout>
                 <NavigationBar></NavigationBar>
-                <PersonalPresentation></PersonalPresentation>
+                <PersonalPresentation userData={index.data.user}></PersonalPresentation>
                 <About></About>
                 <Contacts></Contacts>
-                <Projects></Projects>
+                <Projects projectsData={index.data.user.pinnedItems}></Projects>
                 <Services></Services>
                 <Skills></Skills>
             </Layout>

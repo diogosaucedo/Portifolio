@@ -1,11 +1,11 @@
 import { Container, BasicInfo, Salutation, Profession, DownloadButton, ContactButton, Character } from './styles';
 
-export default function PersonalPresentation() {
+export default function PersonalPresentation({ userData }) {
     return (
         <Container>
             <BasicInfo>
-                <Salutation>Olá, meu nome é Diogo Saucedo :)</Salutation>
-                <Profession>Eu sou um desenvolvedor</Profession>
+                <Salutation>Olá, meu nome é {userData.name} :)</Salutation>
+                <Profession>{userData.bio}</Profession>
                 <DownloadButton>Download CV</DownloadButton>
                 <ContactButton>Entrar em contato</ContactButton>
             </BasicInfo>

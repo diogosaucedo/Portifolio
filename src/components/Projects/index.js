@@ -1,46 +1,33 @@
 import { Container, Title, LastProjects, Project, ProjectName, ProjectTechnologies, Cover } from './styles'
+import { Link } from '../Link/styles'
 
 
-export default function Projects() {
+
+export default function Projects({ projectsData }) {
+    function formatString(arr) {
+        const techs = arr.map(item => item.node.name).toString();  // ["string", "string 2"]
+        return techs.replace(/,/g, ', ') + '.'
+    }
+
     return (
         <Container>
             <Title id='projetos'>Projetos</Title>
             <LastProjects>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 1</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 2</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 3</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 4</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 5</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-                <Project>
-                    <Cover></Cover>
-                    <ProjectName>Projeto 6</ProjectName>
-                    <ProjectTechnologies>html, js, css</ProjectTechnologies>
-                </Project>
-
+                {projectsData.edges.map((project) => (
+                    <Project>
+                        <Cover></Cover>
+                        <Link href={project.node.url} target='_blank'>
+                            <ProjectName>{project.node.name.replace(/-/g, ' ')}</ProjectName>
+                        </Link>
+                        {project.node.languages.edges.length > 0 && (
+                            <ProjectTechnologies>
+                                Tecnologias:&nbsp;
+                                {formatString(project.node.languages.edges)}
+                            </ProjectTechnologies>
+                        )}
+                    </Project>
+                ))}
             </LastProjects>
         </Container>
-
-
     )
-
 }
