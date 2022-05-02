@@ -35,6 +35,7 @@ export const DownloadButton = styled.button`
     background-color: ${theme.colors.greenLight};
     border: none;
     margin-right: 0.75rem;
+    cursor: pointer;
 
 `
 
@@ -47,6 +48,7 @@ export const ContactButton = styled.button`
     background-color: ${theme.colors.dark};
     border: 0.1rem solid ${theme.colors.gray200};
     margin-left: 0.75rem;
+    cursor: pointer;
 `
 
 export const Character = styled.img`

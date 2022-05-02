@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Container>
             <Title id='sobre-mim'>Sobre mim</Title>
-            <Description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <Description>Sou desenvolvedor Front-End com experiência em Next.js, React, e styled-components. Com essas tecnologias, desenvolvi o Acervo e Repositório Digital ARA da UFMT/IFMT, projeto destinado à memória da educação  do Centro Oeste e Norte.
             </Description>
         </Container>
     )

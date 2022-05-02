@@ -24,7 +24,8 @@ function Index({ index }) {
                 <Skills></Skills>
             </Layout>
             <Footer></Footer>
-        </>)
+        </>
+    )
 }
 
 export default Index;

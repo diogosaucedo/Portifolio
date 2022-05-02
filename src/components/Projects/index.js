@@ -2,7 +2,6 @@ import { Container, Title, LastProjects, Project, ProjectName, ProjectTechnologi
 import { Link } from '../Link/styles'
 
 
-
 export default function Projects({ projectsData }) {
     function formatString(arr) {
         const techs = arr.map(item => item.node.name).toString();  // ["string", "string 2"]

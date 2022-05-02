@@ -5,12 +5,14 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 12rem;
 `
 
 export const Title = styled.h2`
     color: ${theme.colors.white};
     font-size: 3.2rem;
     font-weight: 700;
+    margin: 0 0 3rem 0;
 `
 
 export const Items = styled.div`
