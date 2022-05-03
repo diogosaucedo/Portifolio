@@ -13,7 +13,7 @@ This portfolio was built with **Next.js**, **Apollo Client** and **styled-compon
 ### Mobile
 
 <div style="display:flex; align-items:center; justify-content: center">
-<img src="https://images2.imgbox.com/ea/07/tZyyFr4P_o.gif" alt="Layout Mobile"/>
+<img src="https://i.ibb.co/FJwNr2F/Mobile-Version.gif" alt="Layout Mobile"/>
 </div>
 
 ## Getting Started
