@@ -7,7 +7,7 @@ This portfolio was built with **Next.js**, **Apollo Client** and **styled-compon
 ### Desktop
 
 <div style="display:flex; align-items:center; justify-content: center">
-<img  src="https://images2.imgbox.com/74/ed/KKxSKbPR_o.gif" alt="Layout Desktop"/>
+<img  src="https://i.ibb.co/G0JK9xZ/teste.gif" alt="Layout Desktop"/>
 </div>
 
 ### Mobile
