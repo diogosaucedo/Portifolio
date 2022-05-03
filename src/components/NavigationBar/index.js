@@ -5,8 +5,11 @@ import { useState } from 'react'
 export default function NavigationBar() {
     const [isOpen, setIsOpen] = useState(false)
     const toggleMenu = () => {
-        setIsOpen(!isOpen)
-        document.body.style.overflow = isOpen ? 'auto' : 'hidden'
+        // scroll lock and unlock only on screen smaller than 852px
+        if (window.innerWidth <= 852) {
+            setIsOpen(!isOpen)
+            document.body.style.overflow = isOpen ? 'auto' : 'hidden'
+        }
     }
 
     return (
@@ -21,7 +24,7 @@ export default function NavigationBar() {
                     <LineMenu></LineMenu>
                 </HamburgerMenu>
                 <Exit className={isOpen ? 'visible' : 'invisible'} onClick={toggleMenu}>[Fechar]</Exit>
-                <MenuItems className={isOpen ? 'visible scrollOff' : 'invisible scrollOn'}>
+                <MenuItems className={isOpen ? 'visible' : 'invisible'}>
                     <Link onClick={toggleMenu} href='#sobre-mim'><MenuItem>Sobre Mim</MenuItem></Link>
                     <Link onClick={toggleMenu} href='#projetos'><MenuItem>Projetos</MenuItem></Link>
                     <Link onClick={toggleMenu} href='#servicos'><MenuItem>Serviços</MenuItem></Link>
