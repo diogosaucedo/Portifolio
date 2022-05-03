@@ -6,7 +6,8 @@ const theme = {
     gray200: '#333333',
     gray400: '#212121',
     dark: '#171717',
-    linearGradientGreen: 'linear-gradient(90deg, rgba(0,223,94,1) 0%, rgba(12,245,175,1) 100%);',
+    greenLinearGradient: 'linear-gradient(90deg, rgba(0,223,94,1) 0%, rgba(12,245,175,1) 100%);',
   },
 };
+
 export default theme;

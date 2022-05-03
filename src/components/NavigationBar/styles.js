@@ -48,7 +48,6 @@ export const MenuItems = styled.ul`
         background-color: ${theme.colors.dark};
         width: 100%;
         height: 100vh;
-        overflow: hidden;
         padding: 0;
     }
 `
@@ -62,6 +61,7 @@ export const Exit = styled.span`
     padding: 2rem 0 2rem 2rem;
     font-size: 1.8rem;
     color: ${theme.colors.greenLight};
+    cursor: pointer;
 `
 
 export const HamburgerMenu = styled.div`
@@ -73,8 +73,10 @@ export const HamburgerMenu = styled.div`
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
+        cursor: pointer;
     }
-    `
+`
+
 export const LineMenu = styled.div`
     width: 100%;
     height: 0.3rem;

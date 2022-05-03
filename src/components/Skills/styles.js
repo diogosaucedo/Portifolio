@@ -37,6 +37,12 @@ export const Item = styled.div`
     @media (max-width: 1200px) {
         margin: 0.5rem;
     }
+    @media (max-width: 406px) {
+        margin: 0.15rem;
+    }
+    @media (max-width: 387px) {
+        margin: 0.5rem;
+    }
 
 `
 

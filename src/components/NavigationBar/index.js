@@ -4,13 +4,16 @@ import { useState } from 'react'
 
 export default function NavigationBar() {
     const [isOpen, setIsOpen] = useState(false)
+
     const toggleMenu = () => {
-        // scroll lock and unlock only on screen smaller than 852px
+        // Applies changes only on screen smaller than 852px
         if (window.innerWidth <= 852) {
             setIsOpen(!isOpen)
-            document.body.style.overflow = isOpen ? 'auto' : 'hidden'
+            changeScroll()
         }
     }
+
+    const changeScroll = () => document.body.style.overflow = isOpen ? 'auto' : 'hidden'
 
     return (
         <Container>

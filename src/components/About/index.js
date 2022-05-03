@@ -1,5 +1,4 @@
 import { Container, Title, Description } from './styles';
-import { Link } from '../Link/styles';
 
 export default function About() {
     return (

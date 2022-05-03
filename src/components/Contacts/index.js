@@ -40,7 +40,7 @@ export default function Contacts() {
                         <Icon src="./images/phone.svg" />
                     </ContainerIcon>
                     <Title>Telefone</Title>
-                    <Value>(65) 98479-0509</Value>
+                    <Value>(65)98479-0509</Value>
                 </Item>
             </Link>
         </Container>

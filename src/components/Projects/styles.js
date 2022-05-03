@@ -52,7 +52,7 @@ export const ProjectTechnologies = styled.p`
 export const Cover = styled.div`
     width: 30rem;
     height: 13rem;
-    background: ${theme.colors.linearGradientGreen}; 
+    background: ${theme.colors.greenLinearGradient}; 
     margin: 0;
     @media (max-width: 886px) {
         width: 100%;
