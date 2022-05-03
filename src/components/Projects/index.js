@@ -14,7 +14,7 @@ export default function Projects({ projectsData }) {
             <LastProjects>
                 {projectsData.edges.map((project) => (
 
-                    <Project>
+                    <Project key={project.node.id}>
                         <Link href={project.node.url} target='_blank'>
                             <Cover></Cover>
                             <ProjectName>{project.node.name.replace(/-/g, ' ')}</ProjectName>
