@@ -8,6 +8,11 @@ export const Container = styled.div`
     margin-top: 10rem ;
     align-items: center;
     color: ${theme.colors.white};
+    width: 100%;
+    @media (max-width: 750px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `
 
 export const BasicInfo = styled.div`
@@ -29,6 +34,7 @@ export const Profession = styled.p`
 export const DownloadButton = styled.button`
     min-width: 14.7rem;
     height:4.2rem;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
     color: ${theme.colors.dark};
@@ -36,12 +42,16 @@ export const DownloadButton = styled.button`
     border: none;
     margin-right: 0.75rem;
     cursor: pointer;
+    @media (max-width: 391px) {
+        margin: 0 1.5rem 2rem 0;
+    }
 
 `
 
 export const ContactButton = styled.button`
     min-width: 14.7rem;
     height:4.2rem;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
     font-weight: 500;
     color: ${theme.colors.white};
@@ -49,8 +59,14 @@ export const ContactButton = styled.button`
     border: 0.1rem solid ${theme.colors.gray200};
     margin-left: 0.75rem;
     cursor: pointer;
+    @media (max-width: 391px) {
+        margin: 0 ;
+    }
 `
 
 export const Character = styled.img`
     max-width: 30rem ;
+    @media (max-width: 820px) {
+        display: none;
+    }
 `

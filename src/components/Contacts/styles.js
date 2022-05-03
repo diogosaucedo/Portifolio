@@ -6,12 +6,16 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-around;
     margin-top: 8.5rem;
+    flex-wrap: wrap;
 `
 
 export const Item = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 700px) { 
+        margin: 1rem;
+    }
 `
 
 export const Title = styled.h3`

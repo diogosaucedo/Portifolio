@@ -21,6 +21,7 @@ export const Items = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 `
 
 export const Item = styled.div`
@@ -28,7 +29,12 @@ export const Item = styled.div`
     background-color: ${theme.colors.gray400};
     border-bottom: 0.5rem solid ${theme.colors.greenLight};
     padding: 4rem 3rem 2.5rem 3rem;
-
+    @media (max-width: 1330px) {
+        margin: 0.5rem;
+    }
+    @media (max-width: 912px) {
+        width: 100%;
+    }
 `
 
 export const ItemName = styled.h3`

@@ -19,6 +19,10 @@ export const Items = styled.div`
     width: 100%;
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+        justify-content: space-around;
+    }
 
 `
 
@@ -29,6 +33,10 @@ export const Item = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${theme.colors.gray400};
+
+    @media (max-width: 1200px) {
+        margin: 0.5rem;
+    }
 
 `
 

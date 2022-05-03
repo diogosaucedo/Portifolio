@@ -27,6 +27,9 @@ export const Project = styled.div`
     padding: 2rem 2.5rem;
     background: ${theme.colors.gray400};
     margin-bottom:3.2rem ;
+    @media (max-width: 886px) {
+        width: 100%;
+    }
 
 `
 
@@ -49,6 +52,9 @@ export const ProjectTechnologies = styled.p`
 export const Cover = styled.div`
     width: 30rem;
     height: 13rem;
-    background: ${theme.colors.dark}; 
+    background: ${theme.colors.linearGradientGreen}; 
     margin: 0;
+    @media (max-width: 886px) {
+        width: 100%;
+    }
 `

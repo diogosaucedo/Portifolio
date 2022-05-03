@@ -13,18 +13,20 @@ export default function Projects({ projectsData }) {
             <Title id='projetos'>Projetos</Title>
             <LastProjects>
                 {projectsData.edges.map((project) => (
+
                     <Project>
-                        <Cover></Cover>
                         <Link href={project.node.url} target='_blank'>
+                            <Cover></Cover>
                             <ProjectName>{project.node.name.replace(/-/g, ' ')}</ProjectName>
+                            {project.node.languages.edges.length > 0 && (
+                                <ProjectTechnologies>
+                                    Tecnologias:&nbsp;
+                                    {formatString(project.node.languages.edges)}
+                                </ProjectTechnologies>
+                            )}
                         </Link>
-                        {project.node.languages.edges.length > 0 && (
-                            <ProjectTechnologies>
-                                Tecnologias:&nbsp;
-                                {formatString(project.node.languages.edges)}
-                            </ProjectTechnologies>
-                        )}
                     </Project>
+
                 ))}
             </LastProjects>
         </Container>
