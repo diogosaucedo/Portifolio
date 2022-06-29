@@ -1,84 +1,109 @@
-import styled from 'styled-components'
-import theme from '../../styles/theme'
+import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height:80px ;
-    color: ${theme.colors.white};
+  // Layout
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-    // className={!isOpen ? 'visible' : 'invisible'}
-    .invisible {
-        // Hide menu only if the screen is smaller than 852px
-        @media (max-width: 852px) {
-            display: none;
-        }
-    }
-    .visible{
-        // Show menu only if the screen is smaller than 852px
-        @media (max-width: 852px) {
-            display:flex;
-        }
-    }
+  // Box-model
+  height: 80px;
 
-`
+  // Display
+  color: ${theme.colors.white};
+
+  // className={!isOpen ? 'visible' : 'invisible'}
+  .invisible {
+    // Hide menu only if the screen is smaller than 852px
+    @media (max-width: 852px) {
+      display: none;
+    }
+  }
+  .visible {
+    // Show menu only if the screen is smaller than 852px
+    @media (max-width: 852px) {
+      display: flex;
+    }
+  }
+`;
 
 export const Portifolio = styled.span`
-    font-size: 2.6rem;
-    font-weight: 700;
-`
+  font-size: 2.6rem;
+  font-weight: 700;
+`;
 
-export const Menu = styled.nav``
+export const Menu = styled.nav``;
 
 export const MenuItems = styled.ul`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-    font-size: 1.8rem ;
-    @media (max-width: 852px) {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        margin: 0;
-        flex-direction: column;
-        background-color: ${theme.colors.dark};
-        width: 100%;
-        height: 100vh;
-        padding: 0;
-    }
-`
+  // Layout
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  // Layout
+  list-style: none;
+  font-size: 1.8rem;
+
+  // Responsive
+  @media (max-width: 852px) {
+    // Position
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    // Layout
+    display: none;
+    flex-direction: column;
+
+    // Box-model
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    // Display
+    background-color: ${theme.colors.dark};
+  }
+`;
 
 export const MenuItem = styled.li`
-    padding: 2rem;
-`
+  padding: 2rem;
+`;
 
 export const Exit = styled.span`
-    display: none;
-    padding: 2rem 0 2rem 2rem;
-    font-size: 1.8rem;
-    color: ${theme.colors.greenLight};
-    cursor: pointer;
-`
+  display: none;
+  padding: 2rem 0 2rem 2rem;
+  font-size: 1.8rem;
+  color: ${theme.colors.greenLight};
+  cursor: pointer;
+`;
 
 export const HamburgerMenu = styled.div`
-    display: none; 
-    @media (max-width: 852px) {
-        display: flex;
-        width: 3.5rem;
-        height: 3.5rem;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        cursor: pointer;
+  display: none;
+
+  @media (max-width: 852px) {
+    // Layout
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    // Box-model
+    width: 3.5rem;
+    height: 3.5rem;
+
+    // Display
+    cursor: pointer;
+
+    // Change the components in this context
+    div {
+      width: 100%;
+      height: 0.3rem;
     }
-`
+  }
+`;
 
 export const LineMenu = styled.div`
-    width: 100%;
-    height: 0.3rem;
-    background-color: ${theme.colors.white};
-`
+  background-color: ${theme.colors.white};
+`;

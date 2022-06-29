@@ -1,45 +1,64 @@
-import styled from 'styled-components'
-import theme from '../../styles/theme'
+import styled from "styled-components";
+import theme from "../../styles/theme";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 8.5rem;
-    flex-wrap: wrap;
-`
+  // Layout
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  // Box-model
+  margin-top: 8.5rem;
+`;
 
 export const Item = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media (max-width: 700px) { 
-        margin: 1rem;
-    }
-`
+  // Layout
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-export const Title = styled.h3`
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: ${theme.colors.white};
+  // Responsive
+  @media (max-width: 700px) {
+    margin: 1rem;
+  }
+
+  // Change the components in this context.
+  h3 {
     margin: 1.9rem 0 0 0;
-`
-
-export const Value = styled.p`
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: ${theme.colors.gray};
+  }
+  p {
     margin: 0.5rem 0 0 0;
-`
-
-export const ContainerIcon = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  div {
     width: 6.2rem;
     height: 6.2rem;
-    border-radius: 50%;
-    background-color: ${theme.colors.gray400};
-`
+  }
+`;
 
-export const Icon = styled.img``
+export const Title = styled.h3`
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: ${theme.colors.white};
+`;
+
+export const Value = styled.p`
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: ${theme.colors.gray};
+`;
+
+export const ContainerIcon = styled.div`
+  // Layout
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Box-model
+  border-radius: 50%;
+
+  // Display
+  background-color: ${theme.colors.gray400};
+`;
+
+export const Icon = styled.img``;

@@ -1,8 +1,8 @@
-import { ThemeProvider } from 'styled-components'
-import theme from '../styles/theme'
-import GlobalStyle from '../styles/global'
-import { ApolloProvider } from "@apollo/client"
-import { useApollo } from '../../lib/apolloClient'
+import { ThemeProvider } from "styled-components";
+import theme from "../styles/theme";
+import GlobalStyle from "../styles/global";
+import { ApolloProvider } from "@apollo/client";
+import { useApollo } from "../../lib/apolloClient";
 
 export default function MyApp({ Component, pageProps }) {
   const apolloClient = useApollo(pageProps.initialApolloState);
@@ -15,7 +15,5 @@ export default function MyApp({ Component, pageProps }) {
         </ThemeProvider>
       </ApolloProvider>
     </>
-  )
+  );
 }
-
-
